@@ -167,7 +167,5 @@ function co(gen) {
 * async 修饰的函数调用时返回的结果是promise（该promise适合上面所有规则）
 
 ### 参考wiki
-* generator自动执行原理
-https://www.jianshu.com/p/c1b8b89c4905
-* yield高级语法
-https://juejin.im/post/5bc6a73ce51d450e5d0b7167#heading-0
+* generator自动执行原理：https://www.jianshu.com/p/c1b8b89c4905
+* yield高级语法：https://juejin.im/post/5bc6a73ce51d450e5d0b7167#heading-0

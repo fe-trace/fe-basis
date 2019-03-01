@@ -1,4 +1,4 @@
-nodeJs事件循环：https://juejin.im/entry/5b261b7a6fb9a00e78664650
+### nodeJs事件循环
 
 > JS可以运行在浏览器和服务端，都通过事件循环来实现异步操作。但是两个端在事件循环过程中还是存在细微的差异。
 
@@ -22,7 +22,7 @@ Q：一次循环中某个阶段存在多个回调是一次执行一个回调还�
 A：一次循环中先执行当次循环中的所有回调，再执行 process.nextTick 和微任务
 
 Q：不同阶段的回调中添加 setTimeout 和 setImmediate 执行的顺序是否相同？
-A：不一定，两个函数回调执行的阶段不同，在不同阶段的回调中添加会有不同的结果。如果在IO回调中添加两个回调，setImmediate会先执行。
+A：不同，两个函数回调执行的阶段不同，在不同阶段的回调中添加会有不同的结果。如果在IO回调中添加两个回调，setImmediate会先执行。
 
 Q：直接执行 setTimeout 和 setImmediate 结果如何？
 A：直接执行两个回调顺序可能不一致，如果timeout执行过快，主线程执行完之后 timeout 延迟时间未到，node事件循环进入下一个阶段，timeout会在下一次循环中timer阶段执行。如果主线程执行过慢，主线程进行下一次事件循环时延时已到，则timeout会先执行。
@@ -61,6 +61,9 @@ setTimeout(function() {
 // 1 5 6 2 4 3
 ```
 
+### 参考wiki
+* https://juejin.im/post/5b61d8e3e51d45191d7a28a8
+* https://juejin.im/entry/5b261b7a6fb9a00e78664650
+
 PS：每个阶段的回调函数和微任务队列都有个数限制，如果超过限制个数，强制进入下一个阶段
 
-wiki：https://juejin.im/post/5b61d8e3e51d45191d7a28a8
