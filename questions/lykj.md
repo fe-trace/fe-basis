@@ -8,7 +8,7 @@
 
 > Q：docker自动部署如何做文件编排
 
-> Q：async／await 如何做一场捕获
+> Q：async／await 如何做异常捕获
 
 > Q：对象中属性可遍历的原因？
 > 
