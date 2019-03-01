@@ -22,7 +22,7 @@
 
 > Q：xss/csrf预防和解决方案
 
-> Q：网页设置白名单可预防XSS，如何实现的？
+> Q：网页设置域名白名单预防XSS，如何实现？
 >
 > A：csp/content security policy
 

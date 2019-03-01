@@ -52,10 +52,10 @@
 
 > Q：redux实现原理
 
-> Q：介绍React声明周期以及如何和redux结合
+> Q：介绍React生命周期以及如何和redux结合
 
 > Q：React组件如何优化？
 >
 > A：function组件/PureComponent/shouldupdate
 
-> Q：setState调用过程细节
+> Q：setState调用过程实现细节

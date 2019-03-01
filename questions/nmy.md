@@ -1,4 +1,3 @@
->
 > Q：行内元素和行内快元素的区别？
 
 > Q：垂直居中布局
@@ -9,21 +8,34 @@
 
 > Q：解释transition/transform/animation并实现简单的心跳动画
 
-> Q：数组打平实现
+> Q：数组打平方式？[1,2,[3]] => [1,2,3]
 >
 > A：Array.prototype.flat/Array.prototype.reduce
 
+> Q：数组去重方式？[1,2,1] => [1,2]
+>
+> A：[...new Set([1,2,1])]
+
+> Q：代码执行结果？
+> ```
+> let fn = () => { 
+>   console.log(this); 
+>   // ?
+> };
+> fn.bind({})();
+> ```
+
 > Q：截流函数实现
 
-> Q：1234567890.12 格式化成 1，234，567，890.12
+> Q：1234567890.12 格式化成 1,234,567,890.12
 >
 > A：toLocalString
 
-> Q：解释csrf以及解决方案
+> Q：什么是csrf以及解决方案？
 
-> Q：A 标签 target="_blank" 点击跳转时如何防劫持？
+> Q：A 标签设置 target="_blank" 点击跳转时如何防止当前页面被篡改？
 >
-> A：CSP／content security policy
+> A：rel="noopener noreferrer"，打开的页面不能访问到当前页面。
 
 > Q：解释原型和原型链
 
@@ -37,7 +49,7 @@
 
 > Q：redux和React如何结合？
 >
-> A：react-redux 实现
+> A：react-redux 实现细节
 
 > Q：redux异步请求插件原理
 >
